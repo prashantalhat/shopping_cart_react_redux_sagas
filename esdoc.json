@@ -1,0 +1,29 @@
+{
+    "source": "./src",
+    "destination": "./docs",
+    "excludes": ["\\.spec\\.js$"],
+    "test": {
+        "type": "mocha",
+        "source": "./src",
+        "includes": ["\\.spec\\.js$", "testSetup.js"]
+    },
+    "plugins": [{
+        "name": "esdoc-es7-plugin"
+    }],
+    "index": "./README.md",
+    "package": "./package.json",
+    "title": "",
+    "manual": {
+        "changelog": ["./CHANGELOG.md"]
+    },
+    "experimentalProposal": {
+        "classProperties": true,
+        "objectRestSpread": true,
+        "decorators": true,
+        "doExpressions": true,
+        "functionBind": true,
+        "asyncGenerators": true,
+        "exportExtensions": true,
+        "dynamicImport": true
+    }
+}

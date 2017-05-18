@@ -1,0 +1,5 @@
+--compilers js:babel-core/register
+--recursive ./src/**/*.spec.js
+--require babel-polyfill
+--require src/testSetup
+--require @crownbet/utils-test/src/test-ignore
